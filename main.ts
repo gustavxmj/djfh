@@ -1,5 +1,12 @@
+info.onCountdownEnd(function () {
+    game.gameOver(true)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    game.gameOver(false)
+})
 scene.setBackgroundColor(9)
 tiles.setCurrentTilemap(tilemap`level1`)
+info.startCountdown(60)
 let fisk = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . c c c c c . . . . . . . 
@@ -35,6 +42,9 @@ let haj = sprites.create(img`
     fff........ccddfbbdbf1111ff.....
     .............cfbbdbfccccc.......
     ..............fffff.............
-    `, SpriteKind.Player)
+    `, SpriteKind.Enemy)
 scene.cameraFollowSprite(fisk)
 controller.moveSprite(fisk)
+haj.follow(fisk, 60)
+tiles.placeOnRandomTile(haj, assets.tile`myTile2`)
+tiles.placeOnRandomTile(fisk, assets.tile`myTile1`)
