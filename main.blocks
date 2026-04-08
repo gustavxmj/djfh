@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="KJ_8F%{z0-PASKk]cp1?">mySprite</variable><variable id="xdD]xhaL1H#=XpG}U.=5">fisk</variable><variable id="iE6L`o8RGDa!ja0qPR2;">haj</variable><variable type="KIND_SpriteKind" id="Hd4VIE~h(8:+6kU{oY9D">Player</variable><variable type="KIND_SpriteKind" id=")p%!$iZ+gqRHAnS?/tSp">Projectile</variable><variable type="KIND_SpriteKind" id="!hZB3(8RtbIs3+/k_y;1">Food</variable><variable type="KIND_SpriteKind" id="L~C!ravf;v0I^2#};j_j">Enemy</variable></variables><block type="pxt-on-start" id="(mp/xj/KJ?h9.4*nirci" x="12" y="36"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="cA0,0AP(A/nw.=XTn_O:"><value name="color"><shadow type="colorindexpicker" id="]qUx{{4N9Z_^,a2@755w"><field name="index">9</field></shadow></value><next><block type="set_current_tilemap" id="Q#yr5!nD^,|wl$c1:E+0"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="*U50n_JqYiek/oM;oK`/"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow></value><next><block type="variables_set" id="Sw+Sb]A,C8qn.(;r{09T"><field name="VAR" id="xdD]xhaL1H#=XpG}U.=5">fisk</field><value name="VALUE"><shadow type="math_number" id=";|~5m8=po=5gz{vjLiC6"><field name="NUM">0</field></shadow><block type="spritescreate" id="Zb_^Z|rcQqwOaY+@pMt."><value name="img"><shadow type="screen_image_picker" id="4nlbUPa6k93^!]!**-VO"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . c c c c c . . . . . . . 
+. . . c d d d d d c . . . . . . 
+. . . c d c c c c c . . . . . . 
+. . . c c d 4 4 4 4 c . . . . . 
+. . . c 1 4 4 4 4 4 d c . . . . 
+. . c 1 4 4 4 4 4 1 4 4 c . . . 
+c c c 1 4 4 4 4 1 4 4 4 4 c . . 
+c 4 4 1 4 4 c c 1 4 4 4 4 4 c . 
+f 4 f 1 4 f 4 4 1 4 4 4 4 4 c . 
+f 4 f d 4 f 4 c 1 4 f 4 4 4 4 f 
+f 4 f f 4 f f 4 1 4 4 4 4 4 4 f 
+f f c b c 4 4 4 4 1 4 4 4 4 f . 
+. . c d d c 4 4 4 4 d f f f . . 
+. . . c c c f f f f f . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="gu.rHUy0b6p~3jI4i/+E"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="rl~okpf:;(b+N``NSgOX"><field name="VAR" id="iE6L`o8RGDa!ja0qPR2;">haj</field><value name="VALUE"><shadow type="math_number" id="5:j=q7lWiW{@xiEk!T5?"><field name="NUM">0</field></shadow><block type="spritescreate" id="Zs+]Ir@P~cL)r@Wg0J7N"><value name="img"><shadow type="screen_image_picker" id="!kz`5|y.(/3@QQje-,OB"><field name="img">img`
+..............fffcc.............
+..............fbbddc............
+...............fbbddc...........
+ccc............fcbbccf..........
+cbbcc.........ffccccccffffff....
+.cbbdc.....fffcbbbbbbbbbbbbbff..
+.fbbddc..ffcccbbbbcbcbbbbbbbbbff
+..fbbdfffcccccbbbcbcbbffbbbbbcbf
+..fcbbbcccccccbbbcbcb1ff1111bbbf
+..fccbcccccccccbbbbbb11111111bf.
+.fcbbfffccccccccbbbb11cc33cccf..
+.fbbf...cbdbcccccbbb111c131cf...
+fbbf.....ccdddddfbbbc111c33f....
+fff........ccddfbbdbf1111ff.....
+.............cfbbdbfccccc.......
+..............fffff.............
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="r.,WdG~sV[5c+/sHJ-#D"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="camerafollow" id="Ay#`aQo#z]#qd4st}[5o"><value name="sprite"><block type="variables_get" id="?eyB4i4-nOI^OI0|w/#x"><field name="VAR" id="xdD]xhaL1H#=XpG}U.=5">fisk</field></block></value><next><block type="game_control_sprite" id="1c6V]-%;!DO$K+q:2GGg"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id=",+2-#AN9#y|__|G[CxXF"><field name="VAR" id="xdD]xhaL1H#=XpG}U.=5">fisk</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="df]jBc|:H]Q)Yk:tqn:i"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="!7_t,PKwE}5qH6jM]a{!"><field name="speed">100</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
